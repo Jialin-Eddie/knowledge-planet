@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" color="#4DE3FF" stroke-width="1.5">
+  <circle cx="32" cy="32" r="14"/>
+  <circle cx="32" cy="32" r="14" opacity="0.35" stroke-dasharray="3 5"/>
+  <g class="orbit-ring" style="transform-origin:32px 32px">
+    <ellipse cx="32" cy="32" rx="26" ry="10" transform="rotate(-23 32 32)"/>
+    <circle cx="10.2" cy="25.1" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="53.4" cy="38.6" r="1.6" fill="currentColor" stroke="none"/>
+    <circle cx="44.9" cy="22.4" r="1.1" fill="currentColor" stroke="none"/>
+  </g>
+  <style>
+    .orbit-ring { animation: logo-orbit 8s linear infinite; }
+    @keyframes logo-orbit { to { transform: rotate(360deg); } }
+  </style>
+</svg>

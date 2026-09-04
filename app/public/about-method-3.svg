@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none" stroke="#4DE3FF" stroke-width="1.2">
+  <!-- Method 3: COHERE — the network curls and collapses into a sphere -->
+  <rect x="0.5" y="0.5" width="599" height="399" opacity="0.25"/>
+  <!-- curl-in arrows -->
+  <g opacity="0.55" stroke-dasharray="4 4">
+    <path d="M90 80 Q 180 90 240 150" marker-end="url(#arr3)"/>
+    <path d="M520 90 Q 430 100 372 150" marker-end="url(#arr3)"/>
+    <path d="M80 320 Q 180 300 246 262" marker-end="url(#arr3)"/>
+    <path d="M528 316 Q 430 300 366 264" marker-end="url(#arr3)"/>
+  </g>
+  <defs>
+    <marker id="arr3" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L8 4 L0 8" fill="none" stroke="#4DE3FF"/>
+    </marker>
+  </defs>
+  <!-- sphere wireframe: lat/long lines -->
+  <circle cx="306" cy="206" r="110" opacity="0.9"/>
+  <ellipse cx="306" cy="206" rx="110" ry="38" opacity="0.6"/>
+  <ellipse cx="306" cy="206" rx="110" ry="74" opacity="0.4"/>
+  <ellipse cx="306" cy="206" rx="110" ry="96" opacity="0.25"/>
+  <ellipse cx="306" cy="206" rx="38" ry="110" opacity="0.6"/>
+  <ellipse cx="306" cy="206" rx="74" ry="110" opacity="0.4"/>
+  <ellipse cx="306" cy="206" rx="96" ry="110" opacity="0.25"/>
+  <!-- tilted orbit ring -->
+  <ellipse cx="306" cy="206" rx="150" ry="48" transform="rotate(-18 306 206)" opacity="0.5" stroke-dasharray="6 4"/>
+  <!-- node points on sphere surface -->
+  <g fill="#4DE3FF" stroke="none">
+    <circle cx="306" cy="96" r="3.5"/>
+    <circle cx="236" cy="150" r="2.8"/>
+    <circle cx="378" cy="156" r="3"/>
+    <circle cx="260" cy="236" r="2.6"/>
+    <circle cx="352" cy="244" r="2.8"/>
+    <circle cx="306" cy="286" r="2.4"/>
+    <circle cx="300" cy="180" r="3.2"/>
+    <circle cx="338" cy="196" r="2.2"/>
+    <circle cx="272" cy="196" r="2.2"/>
+  </g>
+  <!-- inner arcs -->
+  <g opacity="0.5">
+    <path d="M236 150 Q 268 168 300 180"/>
+    <path d="M300 180 Q 340 170 378 156"/>
+    <path d="M260 236 Q 282 212 300 180"/>
+    <path d="M300 180 Q 330 214 352 244"/>
+  </g>
+  <text x="418" y="336" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="10" letter-spacing="1" opacity="0.9">R = 1.0 · STABLE</text>
+  <text x="40" y="352" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="12" letter-spacing="3">03 / COHERE · 成球</text>
+  <g opacity="0.9">
+    <path d="M12 12 h16 M12 12 v16 M588 12 h-16 M588 12 v16 M12 388 h16 M12 388 v-16 M588 388 h-16 M588 388 v-16"/>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 232 51% 4%;
+    --foreground: 232 100% 97%;
+    --card: 228 43% 14%;
+    --card-foreground: 232 100% 97%;
+    --popover: 228 43% 14%;
+    --popover-foreground: 232 100% 97%;
+    --primary: 188 100% 65%;
+    --primary-foreground: 232 51% 4%;
+    --secondary: 228 43% 14%;
+    --secondary-foreground: 232 100% 97%;
+    --muted: 228 43% 14%;
+    --muted-foreground: 231 22% 63%;
+    --accent: 188 100% 65%;
+    --accent-foreground: 232 51% 4%;
+    --destructive: 324 100% 72%;
+    --destructive-foreground: 232 51% 4%;
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 188 100% 65%;
+    --radius: 0.625rem;
+    --sidebar-background: 232 51% 4%;
+    --sidebar-foreground: 232 100% 97%;
+    --sidebar-primary: 188 100% 65%;
+    --sidebar-primary-foreground: 232 51% 4%;
+    --sidebar-accent: 228 43% 14%;
+    --sidebar-accent-foreground: 232 100% 97%;
+    --sidebar-border: 240 15% 20%;
+    --sidebar-ring: 188 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-void text-star-white font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: rgba(77, 227, 255, 0.25);
+    color: #f2f4ff;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05060f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #131832;
+    border-radius: 999px;
+    border: 2px solid #05060f;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a4f74;
+  }
+}
+
+@layer utilities {
+  .text-gradient-title {
+    background: linear-gradient(120deg, #f2f4ff 30%, #4de3ff 70%, #8b7cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .planet-core-gradient {
+    background: radial-gradient(circle at 35% 30%, #2b2f6b 0%, #131832 55%, #05060f 100%);
+  }
+  .eyebrow-line {
+    @apply inline-block h-px w-6 align-middle;
+    background: linear-gradient(90deg, #4de3ff, transparent);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

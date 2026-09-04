@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none" stroke="#4DE3FF" stroke-width="1.2">
+  <!-- Method 2: CONNECT — arcs growing between nodes into a local network -->
+  <rect x="0.5" y="0.5" width="599" height="399" opacity="0.25"/>
+  <g opacity="0.18" stroke-dasharray="2 6">
+    <line x1="24" y1="116" x2="576" y2="116"/>
+    <line x1="24" y1="200" x2="576" y2="200"/>
+    <line x1="24" y1="284" x2="576" y2="284"/>
+    <line x1="162" y1="32" x2="162" y2="368"/>
+    <line x1="300" y1="32" x2="300" y2="368"/>
+    <line x1="438" y1="32" x2="438" y2="368"/>
+  </g>
+  <!-- curved gravitational arcs -->
+  <g opacity="0.85">
+    <path d="M150 240 Q 190 140 300 120" />
+    <path d="M300 120 Q 400 100 460 190" />
+    <path d="M150 240 Q 240 300 350 300" />
+    <path d="M350 300 Q 440 280 460 190" />
+    <path d="M150 240 Q 260 190 460 190" opacity="0.45" stroke-dasharray="5 5"/>
+    <path d="M300 120 Q 330 210 350 300" opacity="0.45" stroke-dasharray="5 5"/>
+    <path d="M240 90 Q 380 60 500 120" opacity="0.35" stroke-dasharray="3 6"/>
+    <path d="M500 120 Q 520 160 460 190" opacity="0.5"/>
+    <path d="M240 90 Q 260 110 300 120" opacity="0.5"/>
+  </g>
+  <!-- nodes -->
+  <g fill="#4DE3FF" stroke="none">
+    <circle cx="150" cy="240" r="5"/>
+    <circle cx="300" cy="120" r="6"/>
+    <circle cx="460" cy="190" r="5"/>
+    <circle cx="350" cy="300" r="4"/>
+    <circle cx="240" cy="90" r="3"/>
+    <circle cx="500" cy="120" r="3"/>
+  </g>
+  <!-- halo rings on key nodes -->
+  <circle cx="300" cy="120" r="14" opacity="0.5"/>
+  <circle cx="300" cy="120" r="22" opacity="0.25" stroke-dasharray="2 5"/>
+  <circle cx="150" cy="240" r="12" opacity="0.5"/>
+  <circle cx="460" cy="190" r="12" opacity="0.5"/>
+  <!-- edge weights annotation -->
+  <text x="208" y="160" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="10" letter-spacing="1" opacity="0.9">w=0.82</text>
+  <text x="392" y="140" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="10" letter-spacing="1" opacity="0.9">w=0.67</text>
+  <text x="230" y="286" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="10" letter-spacing="1" opacity="0.9">w=0.54</text>
+  <text x="40" y="352" fill="#4DE3FF" stroke="none" font-family="monospace" font-size="12" letter-spacing="3">02 / CONNECT · 连结</text>
+  <g opacity="0.9">
+    <path d="M12 12 h16 M12 12 v16 M588 12 h-16 M588 12 v16 M12 388 h16 M12 388 v-16 M588 388 h-16 M588 388 v-16"/>
+  </g>
+</svg>
